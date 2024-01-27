@@ -1,0 +1,7 @@
+Gets the contents of a file or directory in a repository. Specify the file path or directory with the path parameter. If you omit the path parameter, you will receive the contents of the repository's root directory.
+
+This endpoint supports the following custom media types. For more information, see "Media types."
+
+application/vnd.github.raw+json: Returns the raw file contents for files and symlinks.
+application/vnd.github.html+json: Returns the file contents in HTML. Markup languages are rendered to HTML using GitHub's open-source Markup library.
+application/vnd.github.object+json: Returns the contents in a consistent object format regardless of the content type. For example, instead of an array of objects for a directory, the response will be an object with an entries attribute containing the array of objects.
